@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Formulário Jaque Doces Finos</title>
 </head>
 <body>
-    
+    <header>
+        <img src="img/logo-empresa-principal.png" alt="Logo Jaque Doces Finos">
+        <h1>Pesquisa de satisfação aos serviços prestados!</h1>
+    </header>
+    <section>
+        <form method="get">
+
+            <!-- DADOS PESSOAIS  -->
+                <ol>
+                    <li>
+                        Para começarmos, quem é você?
+                            <ul>
+                                <li>
+                                    <label for = "userName" >Digite seu nome:</label>
+                                    <input type="text" name="userName" required>
+                                </li>
+                                <li>
+                                    <label for = "Whatsapp" >Digite seu WhatsApp com DDD:</label>
+                                    <input type="tel" name="Whatsapp" required>
+                                </li>
+                                <li>
+                                    <label for = "data" >Data aproximada do seu evento/pedido:</label>
+                                    <input type="date" name="data" required>
+                                </li>
+                            </ul>                       
+                   </li>
+                   <li> 
+                    Sobre o seu evento
+                        <ul>
+                            <li>
+                        </ul>
+                   </li>
+                </ol>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
 </body>
 </html>
