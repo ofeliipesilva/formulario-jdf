@@ -15,6 +15,8 @@
         <form method="get">
 
             <!-- DADOS PESSOAIS  -->
+             <fieldset>
+                <legend>Dados Pessoais</legend>
                 <ol>
                     <li>
                         Para começarmos, quem é você?
@@ -33,14 +35,85 @@
                                 </li>
                             </ul>                       
                    </li>
+                   </fieldset>
+                   <!-- Sobre o evento realizado -->
+                   <fieldset>
+                    <legend>Sobre o evento realizado</legend>
+                <ol start="2">
                    <li> 
                     Sobre o seu evento
-                        <ul>
-                            <li>
+                        <ul> 
+                            <li>Como você conheceu o nosso trabalho?
+                                <ul>
+                                 <li>
+                                    <label for = "origem"></label>
+                                    <select name='origem' required>
+                                        <option value="instagram">Instagram</option>
+                                        <option value="indicacao">Indicação</option>
+                                        <option value="festa">Fui a uma festa que tinha seus produtos</option>
+                                        <option value="internet">Pesquisa no Google / Outros</option>
+                                    </select>
+                                 </li>                                 
+                                </ul>
+                            </li>
+                            <li>Qual foi o motivo da sua comemoração?
+                                <ul>
+                                    <li>
+                                        <label for = "motivo"></label>
+                                        <select name='motivo' required>
+                                            <option value="aniversario">Aniversário</option>
+                                            <option value="casamento">Casamento</option>
+                                            <option value="chadebebe">Cha de Bebê</option>
+                                            <option value="formatura">Formatura</option>
+                                            <option value="outros">Outros</option>
+                                        </select>
+                                    </li>                                 
+                                </ul>
+                            </li>
+                            <li>Quais dos nossos produtos fizeram parte da sua festa? (Marque todas que se aplicam)
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="docesfinos">
+                                        <label for="docesfinos">Doces Finos<label>                                                                                                                                      
+                                    </li> 
+                                    <li>
+                                        <input type="checkbox" name="bolo">
+                                        <label for="bolo">Bolo</label>                                              
+                                    </li>       
+                                    <li>
+                                        <input type="checkbox" name="kitfesta">
+                                        <label for="kitfesta">Kit de Festa</label>                                         
+                                    </li>  
+                                    <li>
+                                        <label for="Outro">Outro:</label> 
+                                        <input type="Text" name="Outro">                                        
+                                    </li>                       
+                                </ul>
+                            </li>
                         </ul>
+                        </fieldset>
                    </li>
                 </ol>
+                <fieldset>
+                    <legend>Avaliação da sua Experiência</legend>
+                
+                        <ol start="3">
+                            <li>
+                                Avaliação da sua Experiência
+                                <ul>
+                                    <li>Em uma escala de 1 a 5 (onde 1 é Insatisfeito e 5 é Muito Satisfeito), como você avalia:</li>
+                                    <label for="avaliacao">Avaliação:</label>
+                                    <input type="radio" name="avaliacao" value="1" required> 1
+                                    <input type="radio" name="avaliacao" value="2"> 2           
+                                    <input type="radio" name="avaliacao" value="3"> 3
+                                    <input type="radio" name="avaliacao" value="4"> 4
+                                    <input type="radio" name="avaliacao" value="5"> 5
 
+                                </ul>
+                            </li>
+
+                        </ol>
+                </fieldset>
             <button type="submit">Enviar</button>
 
         </form>
