@@ -3,9 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Formulário Jaque Doces Finos</title>
 </head>
 <body>
-    
+    <header>
+        <img src="img/logo-empresa-principal.png" alt="Logo Jaque Doces Finos">
+        <h1>Pesquisa de satisfação aos serviços prestados!</h1>
+    </header>
+    <section>
+        <form method="get">
+
+            <!-- DADOS PESSOAIS  -->
+             <fieldset>
+                <legend>Dados Pessoais</legend>
+                <ol>
+                    <li>
+                        Para começarmos, quem é você?
+                            <ul>
+                                <li>
+                                    <label for = "userName" >Digite seu nome:</label>
+                                    <input type="text" name="userName" required>
+                                </li>
+                                <li>
+                                    <label for = "Whatsapp" >Digite seu WhatsApp com DDD:</label>
+                                    <input type="tel" name="Whatsapp" required>
+                                </li>
+                                <li>
+                                    <label for = "data" >Data aproximada do seu evento/pedido:</label>
+                                    <input type="date" name="data" required>
+                                </li>
+                            </ul>                       
+                   </li>
+                   </fieldset>
+                   <!-- Sobre o evento realizado -->
+                   <fieldset>
+                    <legend>Sobre o evento realizado</legend>
+                <ol start="2">
+                   <li> 
+                    Sobre o seu evento
+                        <ul> 
+                            <li>Como você conheceu o nosso trabalho?
+                                <ul>
+                                 <li>
+                                    <label for = "origem"></label>
+                                    <select name='origem' required>
+                                        <option value="instagram">Instagram</option>
+                                        <option value="indicacao">Indicação</option>
+                                        <option value="festa">Fui a uma festa que tinha seus produtos</option>
+                                        <option value="internet">Pesquisa no Google / Outros</option>
+                                    </select>
+                                 </li>                                 
+                                </ul>
+                            </li>
+                            <li>Qual foi o motivo da sua comemoração?
+                                <ul>
+                                    <li>
+                                        <label for = "motivo"></label>
+                                        <select name='motivo' required>
+                                            <option value="aniversario">Aniversário</option>
+                                            <option value="casamento">Casamento</option>
+                                            <option value="chadebebe">Cha de Bebê</option>
+                                            <option value="formatura">Formatura</option>
+                                            <option value="outros">Outros</option>
+                                        </select>
+                                    </li>                                 
+                                </ul>
+                            </li>
+                            <li>Quais dos nossos produtos fizeram parte da sua festa? (Marque todas que se aplicam)
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="docesfinos">
+                                        <label for="docesfinos">Doces Finos<label>                                                                                                                                      
+                                    </li> 
+                                    <li>
+                                        <input type="checkbox" name="bolo">
+                                        <label for="bolo">Bolo</label>                                              
+                                    </li>       
+                                    <li>
+                                        <input type="checkbox" name="kitfesta">
+                                        <label for="kitfesta">Kit de Festa</label>                                         
+                                    </li>  
+                                    <li>
+                                        <label for="Outro">Outro:</label> 
+                                        <input type="Text" name="Outro">                                        
+                                    </li>                       
+                                </ul>
+                            </li>
+                        </ul>
+                        </fieldset>
+                   </li>
+                </ol>
+                <fieldset>
+                    <legend>Avaliação da sua Experiência</legend>
+                
+                        <ol start="3">
+                            <li>
+                                Avaliação da sua Experiência
+                                <ul>
+                                    <li>Em uma escala de 1 a 5 (onde 1 é Insatisfeito e 5 é Muito Satisfeito), como você avalia:
+                                        <ul>
+                                            <li>
+                                                    <label for="avaliacao">Sabor dos Produtos:</label>
+                                                    <input type="radio" name="avaliacao" value="1" required> 1
+                                                    <input type="radio" name="avaliacao" value="2"> 2           
+                                                    <input type="radio" name="avaliacao" value="3"> 3
+                                                    <input type="radio" name="avaliacao" value="4"> 4
+                                                    <input type="radio" name="avaliacao" value="5"> 5
+                                            </li>
+                                            <li>
+                                                    <label for="visual">Apresentação e visual: :</label>
+                                                    <input type="radio" name="visual" value="1" required> 1
+                                                    <input type="radio" name="visual" value="2"> 2           
+                                                    <input type="radio" name="visual" value="3"> 3
+                                                    <input type="radio" name="visual" value="4"> 4
+                                                    <input type="radio" name="visual" value="5"> 5
+                                            </li>
+                                            <li>
+                                                    <label for="atendimento">Atendimento (desde o orçamento até a entrega):</label>
+                                                    <input type="radio" name="atendimento" value="1" required> 1
+                                                    <input type="radio" name="atendimento" value="2"> 2           
+                                                    <input type="radio" name="atendimento" value="3"> 3
+                                                    <input type="radio" name="atendimento" value="4"> 4
+                                                    <input type="radio" name="atendimento" value="5"> 5
+                                            </li>
+                                            <li>
+                                                    <label for="embalagem">Embalagem (beleza e segurança no transporte):</label>
+                                                    <input type="radio" name="embalagem" value="1" required> 1
+                                                    <input type="radio" name="embalagem" value="2"> 2           
+                                                    <input type="radio" name="embalagem" value="3"> 3
+                                                    <input type="radio" name="embalagem" value="4"> 4
+                                                    <input type="radio" name="embalagem" value="5"> 5
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Sobre a entrega/retirada do pedido:
+                                        <ul>
+                                            <li>
+                                                <label for="entrega">Como você avalia a entrega/retirada do pedido?</label>
+                                                <br>
+                                                <input type="radio" name="entrega" value="Foi entregue/retirado no horário combinado, sem problemas." required> Foi entregue/retirado no horário combinado, sem problemas.
+                                                <br>
+                                                <input type="radio" name="entrega" value="Houve um pequeno atraso, mas nada que atrapalhasse" required> Houve um pequeno atraso, mas nada que atrapalhasse.
+                                                <br>
+                                                <input type="radio" name="entrega" value="Chegou atrasado ou tive problemas" required> Chegou atrasado ou tive problemas.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        A quantidade de bolo/doces foi adequada para o número de convidados?
+                                        <ul>
+                                            <li>
+                                                <label for="quantidade">Como você avalia a quantidade de bolo/doces?</label>
+                                                <br>
+                                                <input type="radio" name="quantidade" value="Sim, a quantidade foi perfeita." required> Sim, a quantidade foi perfeita.
+                                                <br>
+                                                <input type="radio" name="quantidade" value="Sim, e até sobrou bastante." required> Sim, e até sobrou bastante.
+                                                <br>
+                                                <input type="radio" name="quantidade" value="Não, achei que faltou um pouco." required> Não, achei que faltou um pouco.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Como você avalia o custo-benefício dos nossos produtos?
+                                        <ul>
+                                            <li>
+                                                <label for="custo-beneficio">Como você avalia o custo-benefício dos nossos produtos?</label>
+                                                <br>
+                                                <input type="radio" name="custo-beneficio" value="Excelente (vale cada centavo pela qualidade)" required> Excelente (vale cada centavo pela qualidade)
+                                                <br>
+                                                <input type="radio" name="custo-beneficio" value="Bom (preço justo pelo que entrega)" required> Bom (preço justo pelo que entrega)
+                                                <br>
+                                                <input type="radio" name="custo-beneficio" value="Razoável" required> Razoável
+                                                <br>
+                                                <input type="radio" name="custo-beneficio" value="Achei caro em relação à qualidade" required> Achei caro em relação à qualidade
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Satisfação Geral</legend>
+                        <ol start="4">
+                            <li>Satisfação Geral
+                                <ul>
+                                    <li>Feedback Final
+                                        <ul>                                            
+                                            <li>
+                                                <label for="indicacao">De 0 a 10, qual a probabilidade de você indicar o nosso trabalho para um amigo ou familiar?</label>
+                                                <input type="radio" name="indicacao" value="1" required> 1
+                                                <input type="radio" name="indicacao" value="2"> 2           
+                                                <input type="radio" name="indicacao" value="3"> 3
+                                                <input type="radio" name="indicacao" value="4"> 4
+                                                <input type="radio" name="indicacao" value="5"> 5
+                                                <input type="radio" name="indicacao" value="1"> 6
+                                                <input type="radio" name="indicacao" value="2"> 7           
+                                                <input type="radio" name="indicacao" value="3"> 8
+                                                <input type="radio" name="indicacao" value="4"> 9
+                                                <input type="radio" name="indicacao" value="5"> 10
+                                            </li> 
+                                            <li>
+                                                <label for="comentarios">Deixe aqui seus comentários, sugestões ou elogios:</label>
+                                                <br>
+                                                <textarea name="comentarios" rows="4" cols="50"></textarea>
+                                            </li> 
+                                            <li>
+                                                <label for="fotos">Você tirou alguma foto linda dos nossos doces na sua mesa?</label>                                        
+                                                <p>Se sim, ficaríamos muito felizes se você nos enviasse pelo WhatsApp ou nos marcasse no Instagram @Jaque.docesfinos</p>
+                                            </li>                                           
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                </fieldset>
+                <fieldset> 
+                    <legend>Indicação Premiada</legend>
+                        <h1>Indicação Premiada</h1>
+                        <p>Você tem algum amigo, familiar ou colega que está organizando um casamento, aniversário ou comemoração e está em busca de bolos ou doces?
+                        <br>Deixe o contato dessa pessoa aqui! Nós entraremos em contato com ela oferecendo condições especiais exclusivas por vir através de você. <br>E o melhor: caso o seu indicado feche um pedido conosco, você ganha um brinde delicioso na sua próxima encomenda!</p>
+                        <ul>
+                            <li>
+                                <label for="indicadoNome">Nome do indicado:</label>
+                                <input type="text" name="indicadoNome">
+                            </li>
+                            <li>
+                                <label for="indicadoContato">Contato do indicado (WhatsApp ou Telefone):</label>
+                                <input type="tel" name="indicadoContato">
+                            </li>
+                             <li>
+                                <label for="indicadoEvento">Que tipo de evento ela está organizando? (Opcional) </label>
+                                <input type="text" name="indicadoEvento">
+                            </li>
+
+                          
+                        </ul>
+                        <p>Muito obrigada pelo seu tempo e pela confiança em nosso trabalho. Esperamos estar presentes nas suas próximas celebrações!</p>  
+                </fieldset>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
 </body>
 </html>
