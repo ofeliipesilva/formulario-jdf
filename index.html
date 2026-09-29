@@ -16,22 +16,22 @@
 
             <!-- DADOS PESSOAIS  -->
              <fieldset>
-                <legend>Dados Pessoais</legend>
+                <legend><label for="idUsuario">Dados Pessoais</label></legend>
                 <ol>
                     <li>
-                        Para começarmos, quem é você?
+                        <label for="idUsuario">Para começarmos, quem é você?</label>
                             <ul>
                                 <li>
-                                    <label for = "userName" >Digite seu nome:</label>
-                                    <input type="text" name="userName" required>
+                                    <label for = "idUsuario" >Digite seu nome:</label>
+                                    <input id="idUsuario"type="text" name="userName" required>
                                 </li>
                                 <li>
-                                    <label for = "Whatsapp" >Digite seu WhatsApp com DDD:</label>
-                                    <input type="tel" name="Whatsapp" required>
+                                    <label for = "idWhatsapp" >Digite seu WhatsApp com DDD:</label>
+                                    <input id="idWhatsapp" type="tel" name="Whatsapp" required>
                                 </li>
                                 <li>
-                                    <label for = "data" >Data aproximada do seu evento/pedido:</label>
-                                    <input type="date" name="data" required>
+                                    <label for = "idData" >Data aproximada do seu evento/pedido:</label>
+                                    <input id="idData" type="date" name="data" required>
                                 </li>
                             </ul>                       
                    </li>
@@ -41,13 +41,13 @@
                     <legend>Sobre o evento realizado</legend>
                 <ol start="2">
                    <li> 
-                    Sobre o seu evento
+                    <label for="idOrigem">Sobre o seu evento</label>
                         <ul> 
-                            <li>Como você conheceu o nosso trabalho?
+                            <li><label for="idOrigem">Como você conheceu o nosso trabalho?</label>
                                 <ul>
                                  <li>
                                     <label for = "origem"></label>
-                                    <select name='origem' required>
+                                    <select id="idOrigem" name='origem' required>
                                         <option value="instagram">Instagram</option>
                                         <option value="indicacao">Indicação</option>
                                         <option value="festa">Fui a uma festa que tinha seus produtos</option>
@@ -56,11 +56,11 @@
                                  </li>                                 
                                 </ul>
                             </li>
-                            <li>Qual foi o motivo da sua comemoração?
+                            <li><label for="idMotivo">Qual foi o motivo da sua comemoração?</label>
                                 <ul>
                                     <li>
                                         <label for = "motivo"></label>
-                                        <select name='motivo' required>
+                                        <select id="idMotivo" name='motivo' required>
                                             <option value="aniversario">Aniversário</option>
                                             <option value="casamento">Casamento</option>
                                             <option value="chadebebe">Cha de Bebê</option>
@@ -70,23 +70,23 @@
                                     </li>                                 
                                 </ul>
                             </li>
-                            <li>Quais dos nossos produtos fizeram parte da sua festa? (Marque todas que se aplicam)
+                            <li><label for="idOutro">Quais dos nossos produtos fizeram parte da sua festa? (Marque todas que se aplicam)</label>
                                 <ul>
                                     <li>
-                                        <input type="checkbox" name="docesfinos">
-                                        <label for="docesfinos">Doces Finos<label>                                                                                                                                      
+                                        <input id="idDocesFinos" type="checkbox" name="docesfinos">
+                                        <label for="idDocesFinos">Doces Finos</label>                                                                                                                                      
                                     </li> 
                                     <li>
-                                        <input type="checkbox" name="bolo">
-                                        <label for="bolo">Bolo</label>                                              
+                                        <input id="idBolo" type="checkbox" name="bolo">
+                                        <label for="idBolo">Bolo</label>                                              
                                     </li>       
                                     <li>
-                                        <input type="checkbox" name="kitfesta">
-                                        <label for="kitfesta">Kit de Festa</label>                                         
+                                        <input id="idKitFesta" type="checkbox" name="kitfesta">
+                                        <label for="idKitFesta">Kit de Festa</label>                                         
                                     </li>  
                                     <li>
-                                        <label for="Outro">Outro:</label> 
-                                        <input type="Text" name="Outro">                                        
+                                        <label for="idOutro">Outro:</label> 
+                                        <input id="idOutro" type="Text" name="Outro">                                        
                                     </li>                       
                                 </ul>
                             </li>
@@ -207,13 +207,13 @@
                                                 <input type="radio" name="indicacao" value="5"> 10
                                             </li> 
                                             <li>
-                                                <label for="comentarios">Deixe aqui seus comentários, sugestões ou elogios:</label>
+                                                <label for="idComentarios">Deixe aqui seus comentários, sugestões ou elogios:</label>
                                                 <br>
-                                                <textarea name="comentarios" rows="4" cols="50"></textarea>
+                                                <textarea id="idComentarios" name="comentarios" rows="4" cols="50"></textarea>
                                             </li> 
                                             <li>
                                                 <label for="fotos">Você tirou alguma foto linda dos nossos doces na sua mesa?</label>                                        
-                                                <p>Se sim, ficaríamos muito felizes se você nos enviasse pelo WhatsApp ou nos marcasse no Instagram @Jaque.docesfinos</p>
+                                                <p>Se sim, ficaríamos muito felizes se você nos enviasse pelo WhatsApp ou nos marcasse no Instagram <a href="https://www.instagram.com/jaque.docesfinos?stkn=bnhlOXdqYnNxOXpw" target="_blank">@jaque.docesfinos</a></p>
                                             </li>                                           
                                         </ul>
                                     </li>
@@ -222,30 +222,30 @@
                         </ol>
                 </fieldset>
                 <fieldset> 
-                    <legend>Indicação Premiada</legend>
-                        <h1>Indicação Premiada</h1>
-                        <p>Você tem algum amigo, familiar ou colega que está organizando um casamento, aniversário ou comemoração e está em busca de bolos ou doces?
-                        <br>Deixe o contato dessa pessoa aqui! Nós entraremos em contato com ela oferecendo condições especiais exclusivas por vir através de você. <br>E o melhor: caso o seu indicado feche um pedido conosco, você ganha um brinde delicioso na sua próxima encomenda!</p>
+                    <legend><label for="idIndicadoNome">Indicação Premiada</label></legend>
+                        <h1><label for="idIndicadoNome">Indicação Premiada</label></h1>
+                        <label for="idIndicadoNome"><p>Você tem algum amigo, familiar ou colega que está organizando um casamento, aniversário ou comemoração e está em busca de bolos ou doces?
+                        <br>Deixe o contato dessa pessoa aqui! Nós entraremos em contato com ela oferecendo condições especiais exclusivas por vir através de você. <br>E o melhor: caso o seu indicado feche um pedido conosco, você ganha um brinde delicioso na sua próxima encomenda!</p></label>
                         <ul>
                             <li>
-                                <label for="indicadoNome">Nome do indicado:</label>
-                                <input type="text" name="indicadoNome">
+                                <label for="idIndicadoNome">Nome do indicado:</label>
+                                <input id="idIndicadoNome" type="text" name="indicadoNome">
                             </li>
                             <li>
-                                <label for="indicadoContato">Contato do indicado (WhatsApp ou Telefone):</label>
-                                <input type="tel" name="indicadoContato">
+                                <label for="idIndicadoContato">Contato do indicado (WhatsApp ou Telefone):</label>
+                                <input id="idIndicadoContato" type="tel" name="indicadoContato">
                             </li>
                              <li>
-                                <label for="indicadoEvento">Que tipo de evento ela está organizando? (Opcional) </label>
-                                <input type="text" name="indicadoEvento">
+                                <label for="idIndicadoEvento">Que tipo de evento ela está organizando? (Opcional) </label>
+                                <input id="idIndicadoEvento" type="text" name="indicadoEvento">
                             </li>
 
                           
                         </ul>
-                        <p>Muito obrigada pelo seu tempo e pela confiança em nosso trabalho. Esperamos estar presentes nas suas próximas celebrações!</p>  
+                        <p>Muito obrigada pelo seu tempo e pela confiança em nosso trabalho. Esperamos estar presentes nas suas próximas celebrações!</p>
                 </fieldset>
 
-            <button type="submit">Enviar</button>
+            <button id="idEnviar" type="submit">Enviar</button>
 
         </form>
     </section>
